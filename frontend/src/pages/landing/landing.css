@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('../../assets/images/gif_landing.gif') center;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    #stickyClone {
+        position: relative !important
+    }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1280px) {
+    #stickyContainer {
+        height: 170px !important;
+    }
+}
+
+

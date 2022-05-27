@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c755471.css",
+    "main.js": "/static/js/main.614b0211.js",
+    "static/js/787.337b7687.chunk.js": "/static/js/787.337b7687.chunk.js",
+    "static/media/gif_landing.gif": "/static/media/gif_landing.1a9f05700b9276cfe814.gif",
+    "static/media/motionFaded.svg": "/static/media/motionFaded.5bd33fd81cfb0658adfa.svg",
+    "static/media/ux_uiFaded.svg": "/static/media/ux_uiFaded.3963bda9df188e60e5a7.svg",
+    "static/media/designFaded.svg": "/static/media/designFaded.83969f1ffdb5f89f6665.svg",
+    "static/media/developmentFaded.svg": "/static/media/developmentFaded.923224f6f9a8ec2e8a2c.svg",
+    "static/media/brandingFaded.svg": "/static/media/brandingFaded.6534b0fdecb07d55ca37.svg",
+    "static/media/maleAvatar.svg": "/static/media/maleAvatar.05c1bac03fe0a8be3b899f01343c3517.svg",
+    "static/media/logo.svg": "/static/media/logo.7f3ce203573ebf2c3fcb8af0d2d43dae.svg",
+    "static/media/femaleAvatar.svg": "/static/media/femaleAvatar.95faca6322e97ca6d6f6c092b93add28.svg",
+    "static/media/design.svg": "/static/media/design.7239fa5b09e40dc68b4ca93f5f7cd69f.svg",
+    "static/media/motion.svg": "/static/media/motion.9b1a64e98414d4c59a4c647109d1d0fe.svg",
+    "static/media/tehoBranding.png": "/static/media/tehoBranding.3046465af8429bff98eb.png",
+    "static/media/ux_ui.svg": "/static/media/ux_ui.c3774085916072aff51db3dfa99a9288.svg",
+    "static/media/development.svg": "/static/media/development.c4d1d1cd1efd804bcee8aa0aad459fc0.svg",
+    "static/media/branding.svg": "/static/media/branding.5a05ff9856d248bfea4f6811b8a95a8f.svg",
+    "static/media/logo_title.svg": "/static/media/logo_title.e6da82647d772892327307ed9eaba61d.svg",
+    "static/media/circle-arrow-left.svg": "/static/media/circle-arrow-left.d82b24438b25aa1614eb1187a2083375.svg",
+    "static/media/circle-arrow-right.svg": "/static/media/circle-arrow-right.16bd5a6876fce4d30cd7f6c521f7ed5e.svg",
+    "index.html": "/index.html",
+    "static/media/rArrow.svg": "/static/media/rArrow.a98c37f5c69b2d1557adda2d81caa9dd.svg",
+    "main.2c755471.css.map": "/static/css/main.2c755471.css.map",
+    "main.614b0211.js.map": "/static/js/main.614b0211.js.map",
+    "787.337b7687.chunk.js.map": "/static/js/787.337b7687.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c755471.css",
+    "static/js/main.614b0211.js"
+  ]
+}

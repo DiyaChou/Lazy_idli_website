@@ -1,0 +1,36 @@
+.heroContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+}
+
+.line1 {
+    color: #333333;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.line2 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    .heroContainer {
+        padding: 0 15px;
+        align-items: flex-start;
+    }
+
+    .line1 {
+        font-size: 37px;
+    }
+
+    .line2 {
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,322 @@
+.portfolioContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #020e13;
+  color: #fff;
+  width: 100%;
+  height: calc(100vh + 140px);
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-right: 10px;
+  position: relative;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fadedImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.activePanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#panel1 {
+  background-image: url('../../assets/images/brandingFaded.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  transform: translateY(150px);
+}
+
+#panel2 {
+  background-image: url(../../assets/images/ux_uiFaded.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  transform: translateY(150px);
+}
+
+#panel3 {
+  background-image: url(../../assets/images/designFaded.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  transform: translateY(150px);
+}
+
+#panel4 {
+  background-image: url(../../assets/images/motionFaded.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  transform: translateY(150px);
+}
+
+#panel4 .panelTitle {
+  margin-left: 10px;
+  justify-content: center;
+}
+
+#panel5 {
+  background-image: url(../../assets/images/developmentFaded.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  transform: translateY(150px);
+  overflow: hidden;
+  margin-right: 0px;
+}
+
+.panelTitle {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  height: 110px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 70%;
+  margin-left: 100px;
+}
+
+.panelDesc {
+  line-height: 1.5;
+  font-size: 16px;
+  z-index: 6;
+  height: 400px;
+  overflow: auto;
+  margin: 0px 20px;
+  text-align: justify;
+}
+
+.panelDesc::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.viewBtn {
+  display: flex;
+  border: 1px solid #fff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  transition: 0.2s;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 180px;
+  right: 10px;
+}
+
+.viewBtn:hover {
+  background-color: #fff;
+  color: #333333;
+}
+
+.activePanelItem {
+  color: '#fff';
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.4);
+  min-height: 400px;
+  padding: 5px 20px;
+  width: 250px;
+  flex: 1;
+  margin-top: -40px;
+  margin-left: 30px;
+}
+
+.activePanelItemContainer {
+  display: flex;
+}
+
+.stageHeader {
+  display: flex;
+}
+
+.stageHeaderItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  transition: 0.1s;
+  margin-right: 10px;
+}
+
+.stageHeaderItem:hover {
+  border-bottom: 5px solid #fff;
+  border-width: 3px;
+  border-radius: 2px;
+}
+
+.stageDesc {
+  margin-top: 50px;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.stageDesc::-webkit-scrollbar {
+  background: transparent;
+}
+
+.activeDesc {
+  margin-top: -40px;
+  flex: 3;
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.activeDescTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.activeDescDescription {
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .portfolioContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: scroll;
+    overflow: hidden;
+  }
+
+  .panel {
+    display: flex;
+    flex: 1 !important;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0s !important;
+    position: relative;
+    top: 0;
+    transform: translateY(0) !important;
+  }
+
+  .panel:nth-child(5) {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .panelTitle {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    writing-mode: unset !important;
+    transform: rotate(0deg) !important;
+  }
+
+  .panelDesc {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1300px) {
+  .panelTitle {
+    margin-top: 10px;
+    word-break: break-word;
+  }
+}
+
+/* Media Query for Large screens */
+
+@media screen {
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1370px) {
+  .panelTitle {
+    padding-top: 15px;
+    word-break: break-word;
+  }
+  .activeDesc {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1371px) and (max-width: 1620px) {
+  .panelTitle {
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 5%;
+    word-break: break-word;
+  }
+  .panelDesc {
+    font-size: 18px;
+  }
+  .activeDescDescription {
+    font-size: 18px;
+  }
+  .activeDesc {
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 1901px) {
+  .panelTitle {
+    padding-top: 35px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    word-break: break-word;
+  }
+  .panelDesc {
+    font-size: 22px;
+  }
+  .activeDescDescription {
+    font-size: 22px;
+  }
+  .activeDesc {
+    padding-right: 100px;
+  }
+}

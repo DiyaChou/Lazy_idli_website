@@ -1,0 +1,9 @@
+POST http://localhost:8626/postQUery HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "abcd",
+    "phone": 8787572511,
+    "email": "abcd@gmail.com",
+    "topics": "[false, false, true, false, true]",
+}

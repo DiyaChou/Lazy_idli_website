@@ -1,0 +1,251 @@
+.clientContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: #020e13;
+  flex-direction: column;
+  display: flex;
+  color: #fff;
+  position: relative;
+  justify-content: center;
+}
+
+th {
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #020e13;
+  z-index: 10;
+  padding-bottom: 30px;
+}
+
+td {
+  position: relative;
+  height: 30px !important;
+  width: 300px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+}
+
+.clientsWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.clientHeaderText {
+  font-size: 50px;
+}
+
+.clientTable {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.clientTable::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #b3b6b7;
+  border-radius: 20px;
+}
+
+.clientTable::-webkit-scrollbar-thumb {
+  background-color: #434343;
+  outline: 1px solid rgb(56, 51, 51);
+  border-radius: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+}
+
+.clientOverlay {
+  z-index: -1;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.bgBrand {
+  background-color: rgba(196, 137, 87, 1);
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+.bgUx {
+  background-color: rgba(83, 138, 151, 1);
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+.bgDesign {
+  background-color: rgba(152, 90, 124, 1);
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+.bgMotion {
+  background-color: rgba(174, 146, 130, 1);
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+.bgDev {
+  background-color: rgba(176, 107, 78, 1);
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+.client img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  z-index: 2;
+}
+
+.client span {
+  font-size: 20px;
+  padding: 5px 20px;
+  z-index: 2;
+}
+
+.triangle {
+  position: absolute;
+  margin-left: 50px;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+  border-top: 27px solid transparent;
+  border-left: 70px solid red;
+  border-bottom: 26px solid transparent;
+}
+
+.clientNameOverlay {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.categoryIndicator {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 17px 0px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.clientTable
+  > table:nth-child(1)
+  > tbody:nth-child(2)
+  > tr
+  > td:nth-child(2)
+  > div:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.clientTable
+  > table:nth-child(1)
+  > tbody:nth-child(2)
+  > tr
+  > td:nth-child(6)
+  > div:nth-child(1) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.brandColor {
+  background-color: #c48957;
+  box-shadow: 0px 2px 2px 2px #c48957;
+}
+
+.uxuiDesignColor {
+  background-color: #538a97;
+  box-shadow: 0px 2px 2px 2px #538a97;
+}
+
+.graphicColor {
+  background-color: #985a7c;
+  box-shadow: 0px 2px 2px 2px #985a7c;
+}
+
+.motionColor {
+  background-color: #ae9282;
+  box-shadow: 0px 2px 2px 2px #ae9282;
+}
+
+.developmentColor {
+  background-color: #b06b4e;
+  box-shadow: 0px 2px 2px 2px #b06b4e;
+}
+
+.blr {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.brr {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.br {
+  border-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+  transition: 0.1s;
+  background-color: #020e13;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+.closeBtn::before,
+.closeBtn::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: #fff;
+  left: 13.5px;
+  top: 5px;
+}
+
+.closeBtn::before {
+  transform: rotate(45deg);
+}
+
+.closeBtn::after {
+  transform: rotate(-45deg);
+}
+
+.clientProjectLink {
+  color: #fff;
+  text-decoration: none;
+}
