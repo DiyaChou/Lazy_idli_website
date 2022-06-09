@@ -272,10 +272,7 @@
 
 /* Media Query for Large screens */
 
-@media screen {
-}
-
-@media only screen and (min-width: 1250px) and (max-width: 1370px) {
+@media only screen and (min-width: 1250px) {
   .panelTitle {
     padding-top: 15px;
     word-break: break-word;
@@ -285,7 +282,7 @@
   }
 }
 
-@media only screen and (min-width: 1371px) and (max-width: 1620px) {
+@media only screen and (min-width: 1371px) {
   .panelTitle {
     box-sizing: border-box;
     padding-top: 40px;

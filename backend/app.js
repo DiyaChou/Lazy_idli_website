@@ -8,7 +8,6 @@ const nodemailer = require("nodemailer");
 const app = express();
 const path = require("path");
 
-app.use(cors());
 app.use(express.json());
 
 require("dotenv").config();
@@ -22,9 +21,11 @@ const port = process.env.PORT;
 // });
 
 //mongodb connection
-mongoose.connect(process.env.MONGO_URL, () => {
-  console.log("Connected to MONGODB..");
-});
+mongoose
+  .connect(process.env.MONGO_URL)
+  .then(console.log("Connected to MONGODB.."));
+
+app.use(cors());
 
 const sendEmail = (user) => {
   const tranporter = nodemailer.createTransport({
@@ -77,7 +78,6 @@ app.post("/postQuery", async (req, res) => {
 });
 
 const httpServer = http.createServer(app);
-
 const httpsServer = https.createServer(
   {
     key: fs.readFileSync("server.key"),

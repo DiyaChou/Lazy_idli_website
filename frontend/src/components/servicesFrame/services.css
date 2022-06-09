@@ -88,3 +88,14 @@
     text-align: center;
   }
 }
+
+/* @media only screen and (min-width: 2560px) {
+  .servicesFrame {
+    justify-content: space-evenly;
+  }
+
+  .item {
+    margin: 0 auto 0 0;
+    padding-left: 70px;
+  }
+} */
