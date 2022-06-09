@@ -45,6 +45,7 @@ function Team() {
   const scrollNext = () => {
     const element = document.getElementById("teamCards");
     element.scrollBy((element.scrollWidth / maxItems) * 2, 0);
+    console.log(element.scrollWidth);
   };
 
   const scrollPrev = () => {

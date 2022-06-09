@@ -76,15 +76,37 @@ app.post("/postQuery", async (req, res) => {
     return res.status(500).json(err);
   }
 });
+const privateKey = fs.readFileSync(
+  "/etc/letsencrypt/live/lazyidli.com/privkey.pem",
+  "utf8"
+);
+const certificate = fs.readFileSync(
+  "/etc/letsencrypt/live/lazyidli.com/cert.pem",
+  "utf8"
+);
+const ca = fs.readFileSync(
+  "/etc/letsencrypt/live/lazyidli.com/chain.pem",
+  "utf8"
+);
+
+const credentials = {
+  key: privateKey,
+  cert: certificate,
+  ca: ca,
+};
 
 const httpServer = http.createServer(app);
-const httpsServer = https.createServer(
-  {
-    key: fs.readFileSync("server.key"),
-    cert: fs.readFileSync("server.cert"),
-  },
-  app
-);
+const httpsServer = https.createServer(credentials, app);
+
+// const httpServer = http.createServer(app);
+
+// const httpsServer = https.createServer(
+//   {
+//     key: fs.readFileSync("server.key"),
+//     cert: fs.readFileSync("server.cert"),
+//   },
+//   app
+// );
 
 httpServer.listen(8626, () => console.log(`Listening on port ${8626}`));
 httpsServer.listen(port, () => console.log(`Listening on port ${port}`));

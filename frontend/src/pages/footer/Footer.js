@@ -72,7 +72,7 @@ function Footer({ reference }) {
       return;
     }
 
-    await fetch("http://localhost:8626/postQuery", {
+    await fetch("http://3.110.92.150:8626/postQuery", {
       method: "POST",
       body: JSON.stringify({
         name: name.trim(),
